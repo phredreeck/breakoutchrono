@@ -1,0 +1,126 @@
+export default ({
+    // Principal.
+    VERSION: "25.429.2",
+
+    // Divers.
+    MAX_STAGES: 32,
+    START_TIME: 120,
+    MAX_TIME: 720,
+    TIME_PENALTY_STEP: 5,
+    MAX_TIME_PENALTY: 30,
+    MAX_BALLS: 10,
+    REGENERATE_BRICK_TIMER: 20,
+    MAX_SCORE: 99999999,
+
+    // Taille du canevas.
+    CANVAS_WIDTH: 288,
+    CANVAS_HEIGHT: 216,
+
+    // Ecrans.
+    SCREEN_TITLE: 1,
+    SCREEN_GAME: 2,
+    SCREEN_GAME_OVER: 3,
+    SCREEN_LEVEL_FINISHED: 4,
+    SCREEN_CONGRATS: 5,
+    SCREEN_OPTIONS: 6,
+    SCREEN_ABOUT: 7,
+    SCREEN_KBD_CONTROLS: 8,
+    SCREEN_PAD_CONTROLS: 9,
+
+    // Contrôles.
+    CTRL_KEYBOARD: 1,
+    CTRL_GAMEPAD: 2,
+    CTRL_TOUCH: 3,
+
+    // Aire de jeu.
+    BOARD_X: 16,
+    BOARD_Y: 8,
+    BOARD_WIDTH: (16 * 10),
+    BOARD_X2: (16 + (16 * 10)),
+    BOARD_HEIGHT: (8 * 26),
+    BOARD_COLUMNS: 10,
+    BOARD_LINES: 10,
+
+    // Briques.
+    BRICK_BLUE: 1,
+    BRICK_CYAN: 2,
+    BRICK_GREEN: 3,
+    BRICK_YELLOW: 4,
+    BRICK_RED: 5,
+    BRICK_MAGENTA: 6,
+    BRICK_PURPLE: 7,
+    BRICK_AZUR: 8,
+    BRICK_TEAL: 9,
+    BRICK_ORANGE: 10,
+    BLOCK_SOLID: 11,
+    BRICK_1: 12,
+    BRICK_2: 13,
+    BRICK_3: 14,
+    BRICK_4: 15,
+    BRICK_5: 16,
+    BRICK_QUESTION: 17,
+    BRICK_POW: 18,
+    BRICK_TNT: 19,
+    BLOCK_STAR_BLUE: 20,
+    BLOCK_STAR_YELLOW: 21,
+    BLOCK_STAR_RED: 22,
+    BRICK_STAR_BLUE: 23,
+    BRICK_STAR_YELLOW: 24,
+    BRICK_STAR_RED: 25,
+    BRICK_MYSTERY: 26,
+    BRICK_REGENERATE: 27,
+    BRICK_HIDDEN: 28,
+    BLOCK_HIDDEN: 29,
+
+    // Raquette.
+    PADDLE_VELOCITY: 0.2,
+    PADDLE_BLUE: 1,
+    PADDLE_CYAN: 2,
+    PADDLE_GREEN: 3,
+    PADDLE_YELLOW: 4,
+    PADDLE_RED: 5,
+    PADDLE_MAGENTA: 6,
+    PADDLE_SIZE: 32,
+    MIN_PADDLE_SIZE: 16,
+    MAX_PADDLE_SIZE: 48,
+    MIN_PADDLE_SPACE: 0,
+    MAX_PADDLE_SPACE: 40,
+
+    // Balle.
+    BALL_VELOCITY: 0.12,
+    BALL_BLUE: 1,
+    BALL_CYAN: 2,
+    BALL_GREEN: 3,
+    BALL_YELLOW: 4,
+    BALL_RED: 5,
+    BALL_MAGENTA: 6,
+
+    // Capsule.
+    CAPSULE_VELOCITY: 0.06,
+    CAPSULE_BLUE: 1,
+    CAPSULE_CYAN: 2,
+    CAPSULE_GREEN: 3,
+    CAPSULE_YELLOW: 4,
+    CAPSULE_RED: 5,
+    CAPSULE_MAGENTA: 6,
+
+    // Lasers.
+    LASER_VELOCITY: 6.0,
+    LASER_BLUE: 1,
+    LASER_CYAN: 2,
+    LASER_GREEN: 3,
+    LASER_YELLOW: 4,
+    LASER_RED: 5,
+    LASER_MAGENTA: 6,
+
+    // Effets spéciaux.
+    SPARK_VELOCITY: 2.0,
+    RUMBLE_VELOCITY: 1.25,
+    RUMBLE_GRAVITY: 0.075,
+    SPARK_BLUE: 1,
+    SPARK_CYAN: 2,
+    SPARK_GREEN: 3,
+    SPARK_YELLOW: 4,
+    SPARK_RED: 5,
+    SPARK_MAGENTA: 6,
+})

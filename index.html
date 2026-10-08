@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>Breakout Chrono</title>
+        <link rel="stylesheet" href="/style.css" />
+
+        <!-- Métadonnées -->
+        <meta name="title" content="Breakout Chrono" />
+        <meta name="description" content="Another breakout inspired game." />
+        <meta name="author" content="Frédéric Féret">
+        <meta name="robots" content="noindex, nofollow, noarchive" />
+
+        <!-- Icônes et thème de couleur -->
+        <link rel="icon" type="image/png" href="/icon-32.png" />
+        <link rel="apple-touch-icon" href="/icon-512.png" />
+        <meta name="theme-color" content="#0000FF" />
+
+        <!-- Déclarations pour Facebook, Instagram et Threads -->
+        <meta property="og:site_name" content="Breakout Chrono" />
+        <meta property="og:title" content="Breakout Chrono" />
+        <meta property="og:url" content="https://feret.ovh/breakout" />
+        <meta property="og:description" content="Another breakout inspired game." />
+        <meta property="og:image" content="https://feret.ovh/gemini/gemini.jpg" />
+        <meta property="og:image:secure_url" content="https://feret.ovh/breakout/breakout.jpg" /> 
+        <meta property="og:image:alt" content="Another breakout inspired game." />
+        <meta property="og:image:type" content="image/jpeg" /> 
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+    </head>
+    <body>
+        <!-- Affichage -->
+        <canvas id="app" width="288" height="216"></canvas>
+
+        <!-- Manette virtuelle -->
+        <div id="gamepad" class="hidden">
+            <div id="gamepad-left">
+                <span class="button button-large button-left" data-key="14">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
+                </span>
+                <span class="button button-large button-right" data-key="15">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                </span>
+                <span class="button button-large button-up" data-key="12">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+                </span>
+                <span class="button button-large button-down" data-key="13">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z"></path></svg>
+                </span>
+            </div>
+            <div id="gamepad-right">
+                <span class="button button-large button-action1" data-key="0">
+                    <b>A</b>
+                </span>
+                <span class="button button-large button-action2" data-key="1">
+                    <b>B</b>
+                </span>
+                <span class="button button-large button-action3" data-key="2">
+                    <b>X</b>
+                </span>
+                <span class="button button-large button-action4" data-key="3">
+                    <b>Y</b>
+                </span>
+                <span class="button button-small button-pause" data-key="9">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                </span>
+            </div>
+        </div>
+
+        <!-- Programme principal -->
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>
